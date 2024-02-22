@@ -1,7 +1,7 @@
-# Blacklight::Hierarchy
+# Blacklight::Hierarchy (TRLN Fork)
 [![Build Status](https://github.com/sul-dlss/blacklight-hierarchy/workflows/CI/badge.svg)](https://github.com/sul-dlss/blacklight-hierarchy/actions?query=branch%3Amain) [![Gem Version](https://badge.fury.io/rb/blacklight-hierarchy.svg)](http://badge.fury.io/rb/blacklight-hierarchy)
 
-This plugin provides hierarchical facets for [Blacklight](https://github.com/projectblacklight/blacklight).
+This plugin provides hierarchical facets for [Blacklight](https://github.com/projectblacklight/blacklight). This project is a fork of the original `blacklight-hierarchy` in order to add functionality important to TRLN Discovery hierarchical facets. Key customizations include: 1) ability to configure how the the hierarchy is sorted; 2) a configurable presenter to lookup labels from codes; 3) flexbox layout & improved markup; 4) closer resemblance to regular Blacklight facet links, including rel="nofollow" for bots.
 
 Please note this is does not directly follow any of the competing approaches of [Hierarchical Facets in Solr](http://wiki.apache.org/solr/HierarchicalFaceting), including Solr PivotFacets.
 
@@ -10,7 +10,7 @@ Please note this is does not directly follow any of the competing approaches of 
 Add the plugin to your Blacklight app's Gemfile.
 
 ```ruby
-gem 'blacklight-hierarchy'
+gem 'trln-blacklight-hierarchy'
 ```
 
 Index your hierarchies in a (colon-)separated list. For example, items in a "processing" queue with a "copy" action, might be indexed as:
@@ -76,6 +76,16 @@ config.facet_display = {
 In the above configuration, 'queue_status_facet' is the full Solr field name, and ':' is the delimiter within the field.  Note that suffixes ('facet' in the above example) should not contain underscores, since the methods that deal with the Solr fields and match them to the config assume the "prefix" ('queue_status' in the above example) will be everything up to the last underscore in the field name.  See the facet_tree method for further explanation and some relevant code, as well as the render_hierarchy method for relevant code.
 
 The `[nil]` value is present in support of rotatable facet hierarchies, a totally undocumented feature.
+
+With the TRLN customizations, you may optionally configure a custom facet item presenter, e.g.:
+
+```ruby
+config.facet_display = {
+  :hierarchy => {
+    'location_hierarchy' => [['f'], ':', TrlnArgon::LocationFacetItemPresenter] # values are arrays: 1st element is array, 2nd is delimiter string, 3rd is a presenter
+  }
+}
+```
 
 Facet fields should be added for each permutation of hierarchy key and term values, joined by **_**.  Or, the output of:
 
