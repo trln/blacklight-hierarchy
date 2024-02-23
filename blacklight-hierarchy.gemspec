@@ -3,12 +3,12 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'blacklight/hierarchy/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'blacklight-hierarchy'
+  s.name        = 'trln-blacklight-hierarchy'
   s.version     = Blacklight::Hierarchy::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Michael B. Klein']
   s.email       = ['dlss-dev@lists.stanford.edu']
-  s.homepage    = 'https://github.com/sul-dlss/blacklight-hierarchy'
+  s.homepage    = 'https://github.com/trln/blacklight-hierarchy'
   s.summary     = 'Hierarchical Facets for Blacklight'
   s.description = 'Allows delimited Solr facets to become hierarchical trees in Blacklight.'
 

@@ -1,7 +1,7 @@
 # Blacklight::Hierarchy (TRLN Fork)
-[![Build Status](https://github.com/sul-dlss/blacklight-hierarchy/workflows/CI/badge.svg)](https://github.com/sul-dlss/blacklight-hierarchy/actions?query=branch%3Amain) [![Gem Version](https://badge.fury.io/rb/blacklight-hierarchy.svg)](http://badge.fury.io/rb/blacklight-hierarchy)
+[![Build Status](https://github.com/trln/blacklight-hierarchy/workflows/CI/badge.svg)](https://github.com/trln/blacklight-hierarchy/actions?query=branch%3Amain) [![Gem Version](https://badge.fury.io/rb/trln-blacklight-hierarchy.svg)](http://badge.fury.io/rb/trln-blacklight-hierarchy)
 
-This plugin provides hierarchical facets for [Blacklight](https://github.com/projectblacklight/blacklight). This project is a fork of the original `blacklight-hierarchy` in order to add functionality important to TRLN Discovery hierarchical facets. Key customizations include: 1) ability to configure how the the hierarchy is sorted; 2) a configurable presenter to lookup labels from codes; 3) flexbox layout & improved markup; 4) closer resemblance to regular Blacklight facet links, including rel="nofollow" for bots.
+This plugin provides hierarchical facets for [Blacklight](https://github.com/projectblacklight/blacklight). This project is a fork of the original [blacklight-hierarchy](https://github.com/sul-dlss/blacklight-hierarchy) in order to add functionality important to TRLN Discovery hierarchical facets. Key customizations include: 1) ability to configure how the the hierarchy is sorted; 2) a configurable presenter to lookup labels from codes; 3) flexbox layout & improved markup; 4) closer resemblance to regular Blacklight facet links, including rel="nofollow" for bots.
 
 Please note this is does not directly follow any of the competing approaches of [Hierarchical Facets in Solr](http://wiki.apache.org/solr/HierarchicalFaceting), including Solr PivotFacets.
 
