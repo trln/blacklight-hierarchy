@@ -1,7 +1,7 @@
 {
   "name": "blacklight-hierarchy",
-  "version": "6.2.2",
-  "description": "[![Build Status](https://github.com/sul-dlss/blacklight-hierarchy/workflows/CI/badge.svg)](https://github.com/sul-dlss/blacklight-hierarchy/actions?query=branch%3Amain)",
+  "version": "6.3.0",
+  "description": "[![Build Status](https://github.com/trln/blacklight-hierarchy/workflows/CI/badge.svg)](https://github.com/trln/blacklight-hierarchy/actions?query=branch%3Amain)",
   "main": "app/assets/javascripts/blacklight/hierarchy/hierarchy.js",
   "files": [
     "app/assets/javascripts/blacklight/hierarchy/*.js",
@@ -9,14 +9,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sul-dlss/blacklight-hierarchy.git"
+    "url": "git+https://github.com/trln/blacklight-hierarchy.git"
   },
   "author": "",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/sul-dlss/blacklight-hierarchy/issues"
+    "url": "https://github.com/trln/blacklight-hierarchy/issues"
   },
-  "homepage": "https://github.com/sul-dlss/blacklight-hierarchy#readme",
+  "homepage": "https://github.com/trln/blacklight-hierarchy#readme",
   "devDependencies": { },
   "dependencies": {
     "blacklight-frontend": ">=7.1 || 8.0",
