@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'blacklight/hierarchy/version'
 
 Gem::Specification.new do |s|
-  s.name        = 'trln-blacklight-hierarchy'
+  s.name        = 'blacklight-hierarchy'
   s.version     = Blacklight::Hierarchy::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Michael B. Klein']
