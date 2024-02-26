@@ -1,6 +1,6 @@
 {
   "name": "blacklight-hierarchy",
-  "version": "6.3.0",
+  "version": "6.3.1",
   "description": "[![Build Status](https://github.com/trln/blacklight-hierarchy/workflows/CI/badge.svg)](https://github.com/trln/blacklight-hierarchy/actions?query=branch%3Amain)",
   "main": "app/assets/javascripts/blacklight/hierarchy/hierarchy.js",
   "files": [
